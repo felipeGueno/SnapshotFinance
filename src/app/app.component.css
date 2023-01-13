@@ -1,0 +1,7 @@
+.container-signin{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10% 10% 10%;
+    border-radius: 1cm;
+    
+}

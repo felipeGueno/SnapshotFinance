@@ -1,0 +1,54 @@
+
+ .title {
+    background-color: rgb(255,101,103);
+    margin: 1rem 2rem 5rem 2rem;   
+    /*border: 2px solid rgb(255, 136, 0);*/
+    display: flex;
+    border-radius: 2cm;
+    
+ 
+}
+
+img {
+    height: 3rem;
+    margin: 0.8rem 0.75rem 0.5rem .5rem;
+    margin-right: 1.5rem;
+    margin-left: 1rem; 
+    
+ }
+
+ h2 {
+    margin: 1.3rem 0rem 1rem 0rem;
+    font-size: x-large;
+ }
+
+ h1 {
+    margin-left: 2rem;
+    font-weight: lighter;
+ }
+
+
+ mat-form-field {
+    
+   margin: 1rem 2rem 0rem 2rem;
+    /* border: 2px solid rgb(123, 255, 0);*/    
+ }
+ 
+ .forms{
+    /* border: 2px solid rgb(88, 156, 24);*/ 
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+ }
+
+ #password-field{
+   width: 40%;
+ }
+ 
+ .grupos{
+   margin-top: 2rem;
+   margin-right: 2rem;
+ }
+ mat-slide-toggle {
+   margin: 1rem 0rem 2rem 2rem;
+ }
