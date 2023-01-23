@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { UserRegistration } from '../models/UserRegistration';
 
 @Component({
   selector: 'app-cadastro-usuario',
@@ -11,6 +12,18 @@ export class CadastroUsuarioComponent {
   hide = true;
   checked = false;
   indeterminate = false;
+
+  userRegistration : UserRegistration ={
+    name:'',
+    email:'',
+    password:''
+  }
+
+  saveUser():void {
+    
+  }
+
+  
 
 
   getErrorMessage(): string {

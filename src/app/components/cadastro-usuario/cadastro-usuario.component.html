@@ -17,23 +17,18 @@
 </div>
 <!-- Input Nome com ngForm ngSubmit e ngModel-->
 
-<form #f="ngForm"  class="forms">
+<form #f="ngForm" class="forms">
   <h1>Nome</h1>
   <mat-form-field class="form">
     <mat-label for="name">Nome</mat-label>
-    <input matInput placeholder="Nome" name="name" id="nome" ngModel/>
+    <input [(ngModel)]="userRegistration.name" matInput placeholder="Nome" name="name" id="nome" ngModel />
   </mat-form-field>
 
   <!-- Input Email-->
   <h1>E-mail</h1>
   <mat-form-field class="form">
     <mat-label>E-mail</mat-label>
-    <input
-      matInput
-      placeholder="pat@example.com"
-      [formControl]="email"
-      required
-    />
+    <input [(ngModel)]="userRegistration.email" matInput placeholder="pat@example.com" name="email" required />
     <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
   </mat-form-field>
 
@@ -41,47 +36,23 @@
 
 
   <h1>Senha</h1>
-  <mat-form-field id="password-field" appearance="fill" hintLabel="Max 10 caracteres" >
+  <mat-form-field id="password-field" appearance="fill" hintLabel="Max 10 caracteres">
     <mat-label>Senha</mat-label>
 
-    <input matInput #input maxlength="10" [type]="hide ? 'password' : 'text'" />
+    <input [(ngModel)]="userRegistration.password" matInput #input maxlength="10" [type]="hide ? 'password' : 'text'" />
     <mat-hint class="first-hint" align="end">{{input.value.length}}/10</mat-hint>
-    
-  
-    <button
-      mat-icon-button
-      matSuffix
-      (click)="hide = !hide"
-      [attr.aria-label]="'Hide password'"
-      [attr.aria-pressed]="hide"
-    >
+
+
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+      [attr.aria-pressed]="hide">
       <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
     </button>
   </mat-form-field>
 
+  <div class="buttons">
+
+    <button (click)="saveUser()" mat-stroked-button color="warn" id="confirmButton">Cadastrar</button>
+
+  </div>
 </form>
 
-<div class="grupos">
-  <h1>Criar grupo de despesa?</h1>
-  <section class="example-section">
-    <mat-slide-toggle>
-        Slide me!
-      </mat-slide-toggle>
-    <!--<mat-checkbox class="example-margin" [disabled]="true">Disabled</mat-checkbox>-->
-  </section>
-  <mat-accordion class="example-headers-align" multi>
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Personal data
-        </mat-panel-title>
-        <mat-panel-description>
-          Type your name and age
-          <mat-icon>account_circle</mat-icon>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-    </mat-expansion-panel>
-  </mat-accordion>
-  
- 
-</div>

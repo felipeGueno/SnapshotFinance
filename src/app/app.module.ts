@@ -18,11 +18,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
-
-
-
-
-
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -49,7 +46,9 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     MatCardModule,
     MatExpansionModule,
     MatSlideToggleModule,
-    FormsModule
+    FormsModule,
+    MatSnackBarModule,
+    MatButtonModule
    
     
    

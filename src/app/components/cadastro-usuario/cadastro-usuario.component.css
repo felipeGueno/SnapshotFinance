@@ -44,6 +44,16 @@ img {
  #password-field{
    width: 40%;
  }
+
+ .buttons {
+   margin-left: 2rem;
+   margin-top: 2rem;
+   width: 40%;
+ }
+
+ #confirmButton{
+   width: 100%;
+ }
  
  .grupos{
    margin-top: 2rem;
