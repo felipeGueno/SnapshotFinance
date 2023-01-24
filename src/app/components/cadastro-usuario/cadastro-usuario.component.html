@@ -21,14 +21,14 @@
   <h1>Nome</h1>
   <mat-form-field class="form">
     <mat-label for="name">Nome</mat-label>
-    <input [(ngModel)]="userRegistration.name" matInput placeholder="Nome" name="name" id="nome" ngModel />
+    <input [(ngModel)]="userRegistration.name" matInput placeholder="Nome" name="userRegistration.name" id="nome" ngModel />
   </mat-form-field>
 
   <!-- Input Email-->
   <h1>E-mail</h1>
   <mat-form-field class="form">
     <mat-label>E-mail</mat-label>
-    <input [(ngModel)]="userRegistration.email" matInput placeholder="pat@example.com" name="email" required />
+    <input [(ngModel)]="userRegistration.email" matInput placeholder="pat@example.com" name="userRegistration.email" required />
     <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
   </mat-form-field>
 
@@ -39,7 +39,7 @@
   <mat-form-field id="password-field" appearance="fill" hintLabel="Max 10 caracteres">
     <mat-label>Senha</mat-label>
 
-    <input [(ngModel)]="userRegistration.password" matInput #input maxlength="10" [type]="hide ? 'password' : 'text'" />
+    <input [(ngModel)]="userRegistration.password" name="userRegistration.password" matInput #input maxlength="10" [type]="hide ? 'password' : 'text'" />
     <mat-hint class="first-hint" align="end">{{input.value.length}}/10</mat-hint>
 
 

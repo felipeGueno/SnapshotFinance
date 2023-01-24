@@ -20,6 +20,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatButtonModule} from '@angular/material/button';
+import { HttpClientModule } from "@angular/common/http";
+
 
 
 
@@ -29,7 +31,8 @@ import {MatButtonModule} from '@angular/material/button';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CadastroUsuarioComponent
+    CadastroUsuarioComponent, 
+
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,9 @@ import {MatButtonModule} from '@angular/material/button';
     MatSlideToggleModule,
     FormsModule,
     MatSnackBarModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule,
+    
    
     
    
